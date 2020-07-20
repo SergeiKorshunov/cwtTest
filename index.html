@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWT-test</title>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="dest/css/all.css">
+
+</head>
+<body>
+    <section class="section-1">
+        <div class="wrapper">
+            <header class="header">
+                <a href="" class="header__logo">
+                    <div class="logo-wrap">
+                        <img src="dest/img/logo.png" alt="">
+                    </div>
+                    <p>Видеосервис</p>
+                </a>
+                <div class="header__search">
+                    <input class="search__block" type="text" name="" id="" placeholder="Поиск...">
+                    <a class="search__tag" href="">Найти</a>
+                </div>
+                <div class="persona"></div> 
+                <button class="header-log-js header__login">Войти</button>
+            </header>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="wrapper">
+            <nav class="menu">
+                <a data-category="films-tab" class="menu-link-js menu__link active-link-js" href="">Фильмы</a>
+                <a data-category="tv-tab" class="menu-link-js menu__link" href="">Телеканалы</a>
+            </nav>
+            <div class="content">
+                <div id="films-tab"  class="tab-cat films">
+                    <h2 class="films__header">Новинки</h2>
+                    <div class="films__content">
+                        <div class="films-content-block">
+                            <div class="block-img">
+                                <img src="dest/img/image.jpg" alt="">
+                                <p class="block-img__descr">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+                            </div>
+                            <a class="block-name">
+                                Мульт в кино. Выпуск №103. Некогда грустить!
+                            </a>
+                        </div>
+                        <div class="films-content-block">
+                            <div class="block-img">
+                                <img src="dest/img/image2.jpg" alt="">
+                                <p class="block-img__descr">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+                            </div>
+                            <a class="block-name">
+                                Новый Бэтмен
+                            </a>
+                        </div>
+                        <div class="films-content-block">
+                            <div class="block-img">
+                                <img src="dest/img/image3.jpg" alt="">
+                                <p class="block-img__descr">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+                            </div>
+                            <a class="block-name">
+                                Однажды в Голливуде
+                            </a>
+                        </div>
+                        <div class="films-content-block">
+                            <div class="block-img">
+                                <img src="dest/img/image4.jpg" alt="">
+                                <p class="block-img__descr">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>
+                            </div>
+                            <a class="block-name">
+                                Стриптизерши
+                            </a>
+                        </div>
+                        
+                    </div>
+                
+                    <div class="genre">
+                        <h2 class="genre__header">Жанры</h2>
+                        <div class="genre__content">
+                            <a class="genre__content-block comedy-films">
+                                <img src="dest/img/smile_1.png" alt="">
+                                <p class="block-img__descr">Комедии</p>
+                            </a>
+                            <a class="genre__content-block drams-films">
+                                <img src="dest/img/smile_2.png" alt="">
+                                <p class="block-img__descr">Драма</p>
+                            </a>
+                            <a class="genre__content-block fantastic-films">
+                                <img src="dest/img/smile_3.png" alt="">
+                                <p class="block-img__descr">Фантастика</p>
+                            </a>
+                            <a class="genre__content-block horror-films">
+                                <img src="dest/img/smile_4.png" alt="">
+                                <p class="block-img__descr">Ужасы</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div data-simplebar2 id="tv-tab" class="tv tab-cat scrollTv">
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/one.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">Первый канал</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">Новости (с субтитрами)</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Давай поженимся</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Другие новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/2x2.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">2x2</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">БУРДАШЕВ. Сезон 1, 20 серия</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/rbc.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">РБК</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time ">13:00</span>
+                                <span class="watch-item">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ДЕНЬ. Главные темы</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Главные новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/amedia.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel ">AMEDIA PREMIUM</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item ">Клиент всегда мёртв</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Голодные игры: Сойка-пересмешница. Часть I</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Секс в большом городе</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/one.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">Первый канал</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">Новости (с субтитрами)</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Давай поженимся</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Другие новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/2x2.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">2x2</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">БУРДАШЕВ. Сезон 1, 20 серия</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/rbc.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">РБК</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time ">13:00</span>
+                                <span class="watch-item">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ДЕНЬ. Главные темы</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Главные новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/amedia.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel ">AMEDIA PREMIUM</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item ">Клиент всегда мёртв</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Голодные игры: Сойка-пересмешница. Часть I</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Секс в большом городе</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/one.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">Первый канал</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">Новости (с субтитрами)</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Давай поженимся</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Другие новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/2x2.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">2x2</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">БУРДАШЕВ. Сезон 1, 20 серия</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/rbc.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel">РБК</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time ">13:00</span>
+                                <span class="watch-item">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">ДЕНЬ. Главные темы</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Главные новости</span>
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="tv__block">
+                        <div class="tv__block-img">
+                            <img src="dest/img/amedia.png" alt="">
+                        </div>
+                        <div class="tv__block-afisha">
+                            <p class="name-channel ">AMEDIA PREMIUM</p>
+                            <div class="watch current-watch">
+                                <span class="watch-time">13:00</span>
+                                <span class="watch-item ">Клиент всегда мёртв</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">14:00</span>
+                                <span class="watch-item">Голодные игры: Сойка-пересмешница. Часть I</span>
+                            </div>
+                            <div class="watch">
+                                <span class="watch-time">15:00</span>
+                                <span class="watch-item">Секс в большом городе</span>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-container">
+                <div class="logo-footer">
+                    <img src="dest/img/cwt.png" alt="">
+                </div>
+                <div class="contacts">
+                    <p class="contacts__item address">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                    <p class="contacts__item tel">+7 (3412) 93-88-61, 43-29-29</p>
+                    <a href="https://htc-cs.ru/" class="contacts__item site">htc-cs.ru</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <div class="overlay overlay-js">
+        <div class="popup">
+            <p class="popup-title">Вход</p>
+            <form class="popup-content" action="">
+                <input id="log-js" class="form-input" placeholder="Логин" type="text" name="" id="">
+                <input id="pass-js" class="form-input" placeholder="Пароль" type="password" name="" id="">
+                <input id="check-js" type="checkbox" name="forgot">
+                <label class="form-forget" for="check-js">
+                    Запомнить
+                </label>
+                <div class="agree-js popup-login">Войти</div>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="dest/js/script.js"></script>
+</body>
+</html>
