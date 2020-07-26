@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', function(e){
     user = document.querySelector('.persona'),
     checked = document.querySelector('check-js');
 
-    user.textContent = localStorage.getItem('person');
+    if(localStorage.getItem('person')){
+        user.textContent = JSON.parse(localStorage.getItem('person')).login;
+    }
+    
 
     ;function modalShow(trigger, modal, agree) {
         trigger.addEventListener('click', function (e) {
@@ -48,13 +51,11 @@ document.addEventListener('DOMContentLoaded', function(e){
                 item.classList.remove('active-link-js');
                 this.classList.add('active-link-js');
             })
-
             document.querySelectorAll('.tab-cat').forEach(item => {
                 item.classList.add('hide-tab-block');
             })
             document.getElementById(tabId).classList.toggle('hide-tab-block');
         })
-
     });
 
     // scrollBar
@@ -66,36 +67,24 @@ document.addEventListener('DOMContentLoaded', function(e){
 
     // form
 
-
     auth.addEventListener('click', function () {
-        // console.log(log, password);
         const person = {
             'login': log.value,
             'pass': password.value
         }
-        // log[0].toUpperCase() + log.substring(1);
-        // let person = {
-        //     'login': log,
-        //     'pass': password
-        // }
+        
         // const obj = JSON.stringify(localStorage.setItem('person', person));
-        // console.log(obj);
         localStorage.setItem('person', JSON.stringify(person));
-        user.textContent = localStorage.getItem('person');
-
-        // console.log(log, password);
-        // localStorage.setItem('person', person.login);
-
+        // user.textContent = JSON.parse(localStorage.getItem('person')).login;
+        if (localStorage.getItem('person')) {
+            user.textContent = JSON.parse(localStorage.getItem('person')).login;
+        }
     })
 
-    // document.addEventListener('storage', function () {
-         // localStorage.getItem(a);
-         // user.textContent = a + " " + b[0].toUpperCase() + ".";
-         // console.log('2');
-         // let out = document.querySelector('.out').textContent = localStorage.getItem('a');
-    // })
 
-    
-
+    function capitalize(input) {
+        input.value = input.value.replace(/( |^)[а-яёa-z]/g, function (u) { return u.toUpperCase(); });
+    }
+    capitalize(log)
 })
 
