@@ -1,25 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(e){
     // e.preventDefault();
     // modal
-    const btn = document.querySelector('.header-log-js');
-    const modal = document.querySelector('.overlay-js');
-    const agree = document.querySelector('.agree-js');
+    const btn = document.querySelector('.header-log-js'),
+    modal = document.querySelector('.overlay-js'),
+    agree = document.querySelector('.agree-js'),
 
-    const auth = document.querySelector('.agree-js');
-    const log = document.querySelector('#log-js').value;
-    const password = document.querySelector('#pass-js').value;
-    const user = document.querySelector('.persona');
-    const checked = document.querySelector('check-js');
+    auth = document.querySelector('.agree-js'),
+    log = document.querySelector('#log-js'),
+    password = document.querySelector('#pass-js'),
+    user = document.querySelector('.persona'),
+    checked = document.querySelector('check-js');
 
-    
-    
-    const person = {
-        login: log.value,
-        pass: password.value
-    }
-
-    user.textContent = localStorage.getItem(person.login);
-    // user.innerHTML = localStorage.getItem(person.login);
+    user.textContent = localStorage.getItem('person');
 
     ;function modalShow(trigger, modal, agree) {
         trigger.addEventListener('click', function (e) {
@@ -76,11 +68,23 @@ document.addEventListener('DOMContentLoaded', function(e){
 
 
     auth.addEventListener('click', function () {
-        
+        // console.log(log, password);
+        const person = {
+            'login': log.value,
+            'pass': password.value
+        }
         // log[0].toUpperCase() + log.substring(1);
-        
-        // localStorage.setItem('person', JSON.stringify('person', person.login));
-        localStorage.setItem('person', person);
+        // let person = {
+        //     'login': log,
+        //     'pass': password
+        // }
+        // const obj = JSON.stringify(localStorage.setItem('person', person));
+        // console.log(obj);
+        localStorage.setItem('person', JSON.stringify(person));
+        user.textContent = localStorage.getItem('person');
+
+        // console.log(log, password);
+        // localStorage.setItem('person', person.login);
 
     })
 
